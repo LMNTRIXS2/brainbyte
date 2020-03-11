@@ -1,0 +1,229 @@
+body{
+margin:0;
+padding:0;
+font-family: 'Roboto', serif;
+animation: transitionIn 0.75s;
+}
+#loader{
+width:100%;
+height:100vh;
+z-index:9999;
+background: #fff 
+			url('../images/207.gif') no-repeat center center;
+position:fixed;
+}
+@keyframes transitionIn{
+	from{
+		opacity:0;
+		transform:rotateX(-10deg);
+	}
+	to{
+		opacity:1;
+		transform:rotateX(0);
+	}
+}
+
+.container{
+margin:0 auto;
+max-width:1280px;
+}	
+.header-fixed {
+	background-color:white;
+	box-shadow:0 1px 1px #ccc;
+	padding: 20px 40px;
+	height: 100px;
+	color: #ffffff;
+	box-sizing: border-box;
+	top:-100px;
+
+	-webkit-transition:top 0.3s;
+	transition:top 0.3s;
+}
+
+.header-fixed .header-limiter {
+	max-width: 1200px;
+	margin: 0 auto;
+  text-align:center;
+}
+
+.header-fixed-placeholder{
+	height: 80px;
+	display: none;
+}
+
+/* Logo */
+
+.header-fixed .header-limiter img {
+	float: left;
+}
+
+.header-fixed .header-limiter h1 span {
+	color: #5383d3;
+}
+
+/* The navigation links */
+
+.header-fixed .header-limiter a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.header-fixed .header-limiter nav {
+	font:16px Arial, Helvetica, sans-serif;
+	line-height: 40px;
+	float: right;
+	padding-top:10px;
+	
+}
+
+.header-fixed .header-limiter nav a{
+	display: inline-block;
+	padding: 0 5px;
+	text-decoration:none;
+	color:black;
+}
+
+.header-fixed .header-limiter nav a:hover{
+color: #608bd2;
+transition:all ease-in 0.3s;
+}
+/* Fixed version of the header */
+
+body.fixed .header-fixed {
+	padding: 10px 40px;
+	height: 80px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+body.fixed .header-fixed-placeholder {
+	display: block;
+}
+
+body.fixed .header-fixed .header-limiter h1 {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+body.fixed .header-fixed .header-limiter nav {
+	line-height: 28px;
+	font-size: 13px;
+}
+
+
+/* Making the header responsive */
+
+@media all and (max-width: 600px) {
+
+	.header-fixed {
+		padding: 20px 0;
+		height: 75px;
+		height: 120px;
+	}
+
+	.header-fixed .header-limiter img{
+		float: none;
+		margin: -8px 0 10px;
+		
+	}
+
+	.header-fixed .header-limiter nav {
+		line-height: 1;
+		float:none;
+	}
+
+	.header-fixed .header-limiter nav a {
+		font-size: 13px;
+	}
+
+	body.fixed .header-fixed {
+		display: none;
+	}
+
+}
+.hero-slider{
+background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('../images/maze.jpeg');
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size:cover;
+background-position:center;
+padding:150px;	
+text-align:center;
+color:white;
+}
+ 
+.main{
+width:100%;
+float:left;
+color:black;
+padding:100px 0px;
+}
+.main h1{
+margin:0;
+padding:0;
+color:black;
+}
+.main hr{
+margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid lightgrey;
+}
+.main img{
+width:40px;
+margin-right:10px;
+}
+.main_left{
+width:45%;
+float:left;
+padding-right:10px;	
+}
+.main_right{
+width:45%;
+float:left;
+}
+.about{
+width:100%;
+float:left;
+
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(59,59,208,1) 0%, rgba(0,212,255,1) 44%); 
+color:white;
+padding:100px 0px;
+}
+.about img{
+width:100%;
+object-fit:cover;
+border:10px solid white;
+border-radius:7px;
+box-shadow:4px 5px 4px 5px #ccc;
+}
+.about p{
+font-size:16px;
+margin-bottom:40px;
+}
+.about a{
+float:center;
+background:white;
+color:#344ed6;
+border-radius:20px;
+padding:10px 20px 10px 20px;
+
+}
+.about a:hover{
+background:transparent;
+color:white;
+border:1px solid white;
+padding:9px 19px 9px 19px;
+text-decoration:none;
+}
+.foot{
+width:100%;
+float:left;
+background:#1e1e1e;
+text-align:center;
+padding:50px 0px;
+}
